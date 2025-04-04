@@ -1,7 +1,6 @@
 output
 data
 .DS_Store
-*.html
 .Rproj.user
 .Rhistory
 Final_Project.Rproj
