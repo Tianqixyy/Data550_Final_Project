@@ -16,3 +16,16 @@ saveRDS(
   table_one,
   file = here::here("output/table_one.rds")
 )
+
+
+table_two <- data |>
+  select("diagnosis", "concave.points_worst", "perimeter_worst","texture_mean", "area_worst") |>
+  tbl_summary(by = diagnosis)  |>
+  add_overall() |>
+  add_p()
+
+saveRDS(
+  table_two,
+  file = here::here("output/table_two.rds")
+)
+
