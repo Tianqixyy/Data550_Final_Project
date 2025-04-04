@@ -39,23 +39,11 @@ p3 <- ggplot(data, aes(x = perimeter_mean, fill = diagnosis)) +
                     labels = c("Benign", "Malignant")) +
   theme_minimal()
 
-
+g <- arrangeGrob(p1, p2, p3, ncol = 3)
 ggsave(
-  here::here("output/distribution1.png"),
-  plot = p1,
-  device = "png"
-)
+  here::here("output/distribution1.png"), 
+  plot=g, 
+  width = 20, height = 5)
 
-ggsave(
-  here::here("output/distribution2.png"),
-  plot = p2,
-  device = "png"
-)
-
-ggsave(
-  here::here("output/distribution3.png"),
-  plot = p3,
-  device = "png"
-)
 
 
