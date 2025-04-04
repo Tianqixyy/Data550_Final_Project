@@ -1,4 +1,4 @@
-here::i_am("code/01_make_table1.R")
+here::i_am("code/01_make_tables.R")
 
 data <- readRDS(
   file = here::here("output/data_clean.rds")
