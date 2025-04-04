@@ -3,6 +3,19 @@ title: Final Project description
 author: Tianqi Li
 output: github_document
 ---
+This repository contains the complete workflow for analyzing and visualizing a dataset related to HIV research. The project includes data cleaning, summary tables, figures, statistical modeling, and a final report.
+
+---
+
+#Final Report
+
+The final report is rendered from an R Markdown file:
+
+- **Report Source**: [`Tianqi_report.Rmd`](Tianqi_report.Rmd)
+- **Generated Output**: `Tianqi_report.html`
+
+To generate the final report, run the following command in the terminal:
+`bash$ make`
 
 ## Code description
 
