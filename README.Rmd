@@ -3,11 +3,11 @@ title: Final Project description
 author: Tianqi Li
 output: github_document
 ---
-This repository contains the complete workflow for analyzing and visualizing a dataset related to HIV research. The project includes data cleaning, summary tables, figures, statistical modeling, and a final report.
+This repository contains the complete workflow for analyzing and visualizing a dataset related to Breast cancer research. The project includes data cleaning, summary tables, figures, statistical modeling, and a final report.
 
 ---
 
-#Final Report
+## Final Report
 
 The final report is rendered from an R Markdown file:
 
@@ -26,7 +26,7 @@ To generate the final report, run the following command in the terminal:
 
 `code/01_make_tables.R`
 
-  - reads the cleaned data, selects relevant variables, create tables
+  - reads the cleaned data, selects relevant variables, create two tables
   - save them as output/table_one.rds and output/table_two.rds
 
 

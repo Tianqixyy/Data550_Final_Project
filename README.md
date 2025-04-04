@@ -3,13 +3,13 @@ Final Project description
 Tianqi Li
 
 This repository contains the complete workflow for analyzing and
-visualizing a dataset related to HIV research. The project includes data
-cleaning, summary tables, figures, statistical modeling, and a final
-report.
+visualizing a dataset related to Breast cancer research. The project
+includes data cleaning, summary tables, figures, statistical modeling,
+and a final report.
 
 ------------------------------------------------------------------------
 
-\#Final Report
+## Final Report
 
 The final report is rendered from an R Markdown file:
 
@@ -17,7 +17,7 @@ The final report is rendered from an R Markdown file:
 - **Generated Output**: `Tianqi_report.html`
 
 To generate the final report, run the following command in the terminal:
-`bash $ make`
+`bash$ make`
 
 ## Code description
 
@@ -28,7 +28,7 @@ To generate the final report, run the following command in the terminal:
 
 `code/01_make_tables.R`
 
-- reads the cleaned data, selects relevant variables, create tables
+- reads the cleaned data, selects relevant variables, create two tables
 - save them as output/table_one.rds and output/table_two.rds
 
 `code/02_make_figures.R`
