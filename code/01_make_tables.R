@@ -1,0 +1,18 @@
+here::i_am("code/01_make_table1.R")
+
+data <- readRDS(
+  file = here::here("output/data_clean.rds")
+)
+library(knitr)
+library(dplyr)
+library(gtsummary)
+
+table_one <- data %>%
+  select(diagnosis,radius_mean,texture_mean,perimeter_worst,concave.points_worst, area_worst) %>%
+  head(5) %>%
+  kable(caption = "First 5 rows of data")
+
+saveRDS(
+  table_one,
+  file = here::here("output/table_one.rds")
+)
