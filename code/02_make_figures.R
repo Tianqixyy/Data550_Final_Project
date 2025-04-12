@@ -4,11 +4,11 @@ data <- readRDS(
   file = here::here("output/data_clean.rds")
 )
 
-# 加载 ggplot2
+
 library(dplyr)
 library(ggplot2)
 library(gridExtra)
-# 绘制直方图
+
 p1 <- ggplot(data, aes(x = concave.points_worst, fill = diagnosis)) +
   geom_histogram(alpha = 0.6, position = "identity", bins = 30) +
   labs(title = "Concave points worst Distribution by Tumor Type", 

@@ -18,4 +18,4 @@ install:
 	
 .PHONY: clean
 clean:
-	rm -f output/*.rds && rm -f report.html  && rm -f output/*.png && rm -f .pdf
+	rm -f output/*.rds && rm -f *.html  && rm -f output/*.png && rm -f .pdf
