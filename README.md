@@ -19,6 +19,10 @@ The final report is rendered from an R Markdown file:
 To generate the final report, run the following command in the terminal:
 `bash$ make`
 
+Particularly, befor egenerate the final report, please synchronize your
+package repository by running the following command in the terminal:
+`bash$ make install`
+
 ## Code description
 
 `code/01_clean_data.R`
