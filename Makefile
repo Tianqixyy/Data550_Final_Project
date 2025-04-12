@@ -11,6 +11,10 @@ Figures:
 
 Model:
 	Rscript code/03_make_model.R
+
+.PHONY: install
+install:
+	Rscript -e "renv::restore(prompt = FALSE)"
 	
 .PHONY: clean
 clean:
