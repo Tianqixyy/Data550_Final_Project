@@ -19,3 +19,10 @@ install:
 .PHONY: clean
 clean:
 	rm -f output/*.rds && rm -f *.html  && rm -f output/*.png && rm -f .pdf
+	
+project image: 
+	docker build -t final_report .
+	
+run report:	
+	docker run -v "$$(pwd)/report":/home/rstudio/project/report final_report
+

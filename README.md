@@ -19,9 +19,17 @@ The final report is rendered from an R Markdown file:
 To generate the final report, run the following command in the terminal:
 `bash$ make`
 
-Particularly, befor egenerate the final report, please synchronize your
+Particularly, befor generate the final report, please synchronize your
 package repository by running the following command in the terminal:
 `bash$ make install`
+
+To generate the final report in docker environment, please firstly build
+image: `final_report`. This image could be download in the dockerhub:
+<https://hub.docker.com/repository/docker/gracexyy/final_report/general>
+
+Or we could run `bash$ make project image` to build the image
+`final_report`. The run `bash$ run report` to generate the final report
+in docker container.
 
 ## Code description
 
