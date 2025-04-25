@@ -6,6 +6,11 @@ data <- readRDS(
 library(knitr)
 library(dplyr)
 library(gtsummary)
+library(cardx)
+library(broom)
+library(broom.helpers)
+library(car)
+library(parameters)
 
 table_one <- data %>%
   select(diagnosis,radius_mean,texture_mean,perimeter_worst,concave.points_worst, area_worst) %>%

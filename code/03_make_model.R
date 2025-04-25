@@ -1,5 +1,9 @@
 here::i_am("code/03_make_model.R")
-
+library(cardx)
+library(broom)
+library(broom.helpers)
+library(car)
+library(parameters)
 data <- readRDS(
   file = here::here("output/data_clean.rds")
 )
@@ -25,3 +29,4 @@ saveRDS(
   regression_table,
   file = here::here("output/regression_tables.rds")
 )
+
