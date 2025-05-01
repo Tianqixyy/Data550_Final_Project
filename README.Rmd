@@ -22,7 +22,7 @@ Particularly, befor generate the final report, please synchronize your package r
 
 To generate the final report in docker environment, please run `bash$ run report` to generate the final report in docker container. When you doing this, docker will automatically download the image from dockerhub: https://hub.docker.com/repository/docker/gracexyy/final_report/general
 
-Or we could run `bash$ make project image` to build the image at your local computer. The run `bash$ run report` to generate the final report in docker container.
+Or we could run `bash$ make project image` to build the image on your local computer. The run `bash$ run report` to generate the final report in docker container.
 
 ## Code description
 
