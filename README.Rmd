@@ -20,9 +20,9 @@ To generate the final report, run the following command in the terminal:
 Particularly, befor generate the final report, please synchronize your package repository by running the following command in the terminal:
 `bash$ make install`
 
-To generate the final report in docker environment, please firstly build image: `final_report`. This image could be download in the dockerhub: https://hub.docker.com/repository/docker/gracexyy/final_report/general
+To generate the final report in docker environment, please run `bash$ run report` to generate the final report in docker container. When you doing this, docker will automatically download the image from dockerhub: https://hub.docker.com/repository/docker/gracexyy/final_report/general
 
-Or we could run `bash$ make project image` to build the image `final_report`. The run `bash$ run report` to generate the final report in docker container.
+Or we could run `bash$ make project image` to build the image at your local computer. The run `bash$ run report` to generate the final report in docker container.
 
 ## Code description
 

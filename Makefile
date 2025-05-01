@@ -21,7 +21,7 @@ clean:
 	rm -f output/*.rds && rm -f *.html  && rm -f output/*.png && rm -f .pdf
 	
 project image: 
-	docker build -t gracexyy/final_report:latest0 .
+	docker build -t gracexyy/final_report:latest .
 	
 run report:	
 	docker run -v "$$(pwd)/report":/home/rstudio/project/report gracexyy/final_report:latest
