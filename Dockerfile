@@ -14,7 +14,7 @@ RUN R -e "renv::restore()"
 
 ###### DO NOT EDIT STAGE 1 BUILD LINES ABOVE ######
 FROM --platform=linux/amd64 rocker/tidyverse:4.4.2
-
+RUN apt-get update && apt-get install -y pandoc
 WORKDIR /home/rstudio/project
 COPY --from=base /home/rstudio/project .
 
@@ -24,7 +24,7 @@ COPY Makefile Tianqi_report.Rmd ./
 COPY data/ data/
 
 COPY code/ code/
-CMD make && mv report/Tianqi_report.html report/
+CMD make && mv Tianqi_report.html report/
 
 
 
